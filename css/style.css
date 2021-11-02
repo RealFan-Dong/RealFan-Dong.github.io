@@ -11,10 +11,28 @@ body{
   }
   
   header{
-    height: 40px;
+    height: 60px;
     background-color: #333;
     flex-shrink: 0;
     /* 默认值为1 */
+  }
+  header a{
+    text-decoration: none;
+    font-size: 20px;
+    position: absolute;
+    top:13px;
+    left:20px;
+    color: #b9b9b9;
+  }
+  header a:hover{
+    color: #ff6700;
+    border-bottom: 3px solid #ff6700;
+    transition: all .2s;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+    /*这些是兼容性代码*/
   }
   
   nav{
@@ -87,6 +105,15 @@ body{
     color: #595959;
   }
   
+
   footer{
+    height: 40px;
+    background-color: #333;
+
+    text-align: center;
+  }
+  footer h4{
+    color: rgb(255, 255, 255);
+
     text-align: center;
   }
