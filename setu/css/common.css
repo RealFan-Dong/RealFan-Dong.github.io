@@ -1,0 +1,78 @@
+body{
+    margin: 0;
+    background-color: #ececec;
+  
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    /* 用flex划空间需要父元素有个具体的尺寸 */
+  
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+    header{
+      height: 60px;
+      background-color: #333;
+      flex-shrink: 0;
+      /* 默认值为1 */
+    }
+    header a{
+      text-decoration: none;
+      font-size: 20px;
+      position: absolute;
+      top:13px;
+      left:20px;
+      color: #b9b9b9;
+    }
+    header a:hover{
+      color: #ff6700;
+      border-bottom: 3px solid #ff6700;
+      transition: all .2s;
+      -webkit-transition: all .2s;
+      -moz-transition: all .2s;
+      -ms-transition: all .2s;
+      -o-transition: all .2s;
+      /*这些是兼容性代码*/
+    }
+    
+    nav{
+      border-bottom: 1px solid #e6e6e6;
+      height: 80px;
+    
+      display: flex;
+      justify-content: center;
+    }
+    nav a{
+      text-decoration: none;
+      /* 去掉下划线 */
+      font-size: 20px;
+      color: #000;
+      padding: 30px 10px;
+      margin: 0 20px;
+      /* 这样可以做出线分开的感觉 */
+    }
+    nav a:hover{
+      color: #ff6700;
+      border-bottom: 3px solid #ff6700;
+      transition: all .2s;
+      -webkit-transition: all .2s;
+      -moz-transition: all .2s;
+      -ms-transition: all .2s;
+      -o-transition: all .2s;
+      /*这些是兼容性代码*/
+    }
+  
+    footer{
+      height: 45px;
+      background-color: #333;
+      text-align: center;
+      position: fixed;
+      left: 0px;
+      bottom: 0px;
+      width: 100%;
+      z-index: 9999;
+    }
+    footer h4{
+      color: rgb(255, 255, 255);
+      text-align: center;
+    }
